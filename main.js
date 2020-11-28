@@ -85,7 +85,7 @@ function clearTasks(e) {
 function filterTasks(e) {
   // First of all fetching the input value from the filter field to search the task according to that
   // let taskKeyword;
-  let taskKeyword = e.target.value;
+  let taskKeyword = e.target.value.toLowerCase();
 
   // Accessing each task item, this is event bubbling
   const taskItem = e.target.parentElement.parentElement.nextElementSibling.firstElementChild.querySelectorAll(
@@ -96,7 +96,7 @@ function filterTasks(e) {
   taskItem.forEach(function (task) {
     // Now checking wether the inputted filter value exists in the tasks
     // Also converting the task item value to lower case so that case sensitivity doesn't occur
-    if (task.textContent.indexOf(taskKeyword) !== -1) {
+    if (task.textContent.toLowerCase().indexOf(taskKeyword) !== -1) {
       // Show the matching results of task items
       task.style.display = "block";
     } else {
