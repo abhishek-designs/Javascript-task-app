@@ -125,3 +125,9 @@ body {
   pointer-events: none;
   font-size: 1rem;
 }
+
+@media (max-width: 500px) {
+  .container {
+    width: 50vh;
+  }
+}
