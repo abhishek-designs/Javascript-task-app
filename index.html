@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage your tasks</title>
+    <script src="https://kit.fontawesome.com/5514dc631b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Task App container -->
+    <div class="container">
+        <!-- From where to add tasks -->
+        <div class="task-add-contain">
+            <!-- Add task input -->
+            <div class="input-task-contain">
+                <form id="task-input">
+                    <div class="form-grp"> 
+                        <label for="task-input-field">Add your task</label>
+                        <input type="text" name="task-input-field" class="task-input-field" autocomplete="off">
+                    </div>
+                    <input type="submit" value="Add Task" class="btn btn-primary add-task-btn">
+                </form>
+            </div>
+        </div>
+        <!-- From where to display and filter tasks -->
+        <div class="task-action-contain">
+            <!-- Filter tab container -->
+            <div class="filter-contain">
+                <div class="form-grp">
+                    <label for="task-filter">Filter tasks</label>
+                    <input type="text" name="task-filter" class="task-filter-field" autocomplete="off">
+                </div>
+            </div>
+
+            <!-- Container in which tasks is shown and added up -->
+            <div class="display-task-contain">
+                <ul class="task-lists">
+                    <!-- Through javascript -->
+                    <!-- <li class="task-item">
+                        Task 1
+                        <a href="#" class="delete-task-btn">
+                            <i class="fa fa-remove"></i>
+                        </a>
+                    </li> -->
+                </ul>
+
+                <!-- Button to clear all tasks -->
+                <a href="#" class="btn btn-dark clear-tasks-btn">Clear Tasks</a>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

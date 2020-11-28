@@ -1,0 +1,124 @@
+/* Variables */
+:root {
+  --primary-color: #ae94d8;
+  --primary-light: #efecf3;
+  --primary-dark: #553d7a;
+  --dark-color: #5a5a5a;
+  --red-color: #d62b2b;
+  --light-color: #fff;
+  --primary-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Default reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  line-height: 1.4;
+  font-family: var(--primary-font);
+  background-color: var(--primary-light);
+}
+
+/* Predefined classes */
+.container {
+  width: 70vh;
+  margin: 1rem auto;
+  /* height: 60vh; */
+  background-color: var(--light-color);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: var(--primary-font);
+  font-size: 0.8rem;
+  border: 2px solid transparent;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.btn-primary:hover {
+  background-color: #bca2e2;
+}
+
+.btn-dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.btn-dark:hover {
+  background-color: rgba(90, 90, 90, 0.9);
+}
+
+/* App styling */
+.form-grp label {
+  display: block;
+  padding-bottom: 0.6rem;
+  font-size: 1rem;
+  color: var(--primary-dark);
+}
+
+.task-input-field,
+.task-filter-field {
+  padding: 0.8rem 1rem;
+  outline: none;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.task-action-contain {
+  margin-top: 1.5rem;
+}
+
+.task-lists {
+  list-style: none;
+  padding: 0.8rem 0;
+}
+
+.task-item {
+  position: relative;
+  padding: 0.8rem 1rem;
+  /* height: 3rem; */
+  background: var(--primary-light);
+  border-radius: 10px;
+  /* font-weight: bold; */
+  color: var(--primary-dark);
+  margin-bottom: 0.6rem;
+}
+
+.task-item .delete-task-btn {
+  /* position: absolute; */
+  /* right: 10px; */
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary-dark);
+  display: flex;
+  cursor: pointer;
+  /* margin-left: 80%; */
+}
+
+.task-item .delete-task-btn i {
+  pointer-events: none;
+  font-size: 1rem;
+}
