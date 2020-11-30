@@ -25,7 +25,7 @@ body {
 
 /* Predefined classes */
 .container {
-  width: 70vh;
+  width: 30rem;
   margin: 1rem auto;
   /* height: 60vh; */
   background-color: var(--light-color);
@@ -128,7 +128,7 @@ body {
 
 @media (max-width: 500px) {
   .container {
-    width: 45vh;
+    width: 20rem;
   }
 
   .btn {
